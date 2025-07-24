@@ -21,6 +21,6 @@ public interface ClienteMapper {
 
     ClienteResponseDTO toResponse(ClienteDomain cliente);
 
-    @Mapping(source = "dataVenciomentoFatura", target = "dataVencimentoFatura")
+    @Mapping(source = "dataVencimentoFatura", target = "dataVencimentoFatura")
     CartaoDomain toCartaoDomain(ClienteRequestDTO clienteRequestDTO);
 }
